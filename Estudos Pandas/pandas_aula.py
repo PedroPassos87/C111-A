@@ -18,25 +18,25 @@ print(s[s > 10])                           #condicional
 
 #DATAFRAME 2D
 
-df =  pd.DataFrame(columns=['X', 'Y', 'Z'], index= ['A', 'B','C'], data= np.random.randint(1,50, [3,3])) 
+df =  pd.DataFrame(columns=['X', 'Y', 'Z'], index= ['A', 'B', 'C'], data= np.random.randint(1,50, [3,3])) 
 
 print(df)
 
-print(df.loc['B','C'], ['X', 'Y', 'Z'])       #slicing
+print(df.loc[['B','C'], ['X', 'Y', 'Z']])       #slicing
 print(df.iloc[1:,:])                          #slicing
 
 #ler um dataset no pandas
-dfp = pd.read_csv('paises.csv',delimiter=';')
+dfp = pd.read_csv('Estudos Pandas/paises.csv',delimiter=';')
 print(dfp)
 
 #colunas do dataset
 print(dfp.columns)
 
 #Apenas nomes dos paises
-print(df['Country'])
+print(dfp['Country'])
 
 # 3 primeiros paises
-print(df.head(3))
+print(dfp.head(3))
 
 # ultimos 3 paises
-print(df.tail(3))
+print(dfp.tail(3))
