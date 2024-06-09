@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('c:/Users/peaga/Documents/Estudos/C111/Estudos Matplot/space.csv', delimiter=';')       #lendo dataset
+df = pd.read_csv('space.csv', delimiter=';')       #lendo dataset
 
 print(df.columns)
 
@@ -21,7 +21,7 @@ plt.show()
 
 #-------------------------------XXXX-------------------------------#
 
-df2 = pd.read_csv('c:/Users/peaga/Documents/Estudos/C111/Estudos Matplot/paises.csv', delimiter=';')
+df2 = pd.read_csv('paises.csv', delimiter=';')
 
 death = df2[df2['Region'].str.contains('NORTHERN AMERICA')]['Deathrate']
 birth = df2[df2['Region'].str.contains('NORTHERN AMERICA')]['Birthrate']
